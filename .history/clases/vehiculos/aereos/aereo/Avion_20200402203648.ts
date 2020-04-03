@@ -11,7 +11,7 @@ export class Avion extends Aereo {
         return `${age} años`;
     }
 
-    public showVehiculoData(): void {
+    public showPetData(): void {
         const data = {
             tipo: this.getType(),
             nombre : this.getName(),

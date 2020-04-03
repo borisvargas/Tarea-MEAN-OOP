@@ -10,20 +10,14 @@ const heli = new Helicoptero('helic-Z1P4',new Date('2015-03-01'), 'negro', 30, 7
 
 console.group('BARCO');
 titanic.makeNoise();
-titanic.showVehiculoData();
+titanic.showPetData();
 console.groupEnd();
 
 console.group('VELERO');
 donkan.makeNoise();
-donkan.showVehiculoData();
+donkan.showPetData();
 console.groupEnd();
 
-console.group('AVION');
-jet.makeNoise();
-jet.showVehiculoData();
-console.groupEnd();
-
-console.group('HELICOPTERO');
-heli.makeNoise();
-heli.showVehiculoData();
+console.group('plant');
+Girasol.showPlantData();
 console.groupEnd();

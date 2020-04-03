@@ -17,7 +17,6 @@ export abstract class Acuativo extends Vehiculo {
         this.weight = weight;
         this.height = height;
         this.captain = captain;
-    }
     // getters
     protected getName(): string {
         return this.name;

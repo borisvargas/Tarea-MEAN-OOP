@@ -7,16 +7,14 @@ export abstract class Acuativo extends Vehiculo {
     private color: string;
     private weight: number;
     private height: number;
-    private captain: string;
 
-    constructor(name: string, buildingDate: Date, color: string, weight: number, height: number, captain: string) {
+    constructor(name: string, buildingDate: Date, color: string, weight: number, height: number) {
         super('Acuativo');
         this.name = name;
         this.buildingDate = buildingDate;
         this.color = color;
         this.weight = weight;
         this.height = height;
-        this.captain = captain;
     }
     // getters
     protected getName(): string {
@@ -34,8 +32,5 @@ export abstract class Acuativo extends Vehiculo {
 
     protected getHeight(): number {
         return this.height;
-    }
-    protected getCaptain(): string {
-        return this.captain;
     }
 }

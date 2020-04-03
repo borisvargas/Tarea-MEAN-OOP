@@ -19,11 +19,6 @@ donkan.showVehiculoData();
 console.groupEnd();
 
 console.group('AVION');
-jet.makeNoise();
+donkan.makeNoise();
 jet.showVehiculoData();
-console.groupEnd();
-
-console.group('HELICOPTERO');
-heli.makeNoise();
-heli.showVehiculoData();
 console.groupEnd();

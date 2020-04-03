@@ -11,7 +11,7 @@ export class Avion extends Aereo {
         return `${age} años`;
     }
 
-    public showVehiculoData(): void {
+    public showPetData(): void {
         const data = {
             tipo: this.getType(),
             nombre : this.getName(),
@@ -24,6 +24,6 @@ export class Avion extends Aereo {
     }
 
     makeNoise(): void {
-        console.log(`El avion ${this.getName()} esta volando`);
+        console.log(`${this.getName()} esta maullando.`);
     }
 }

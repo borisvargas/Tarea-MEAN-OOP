@@ -1,9 +1,9 @@
-import { Aereo } from '../Aereo';
+import { Acuativo } from '../Acuatico';
 
-export class Avion extends Aereo {
+export class Avion extends Acuativo {
 
-    constructor(name: string, buildingDate: Date, color: string, weight: number, height: number) {
-        super(name, buildingDate, color, weight, height);
+    constructor(name: string, buildingDate: Date, color: string, weight: number, height: number, captain: string) {
+        super(name, buildingDate, color, weight, height, captain);
     }
 
     private getAge(): string {
@@ -11,14 +11,15 @@ export class Avion extends Aereo {
         return `${age} años`;
     }
 
-    public showVehiculoData(): void {
+    public showPetData(): void {
         const data = {
             tipo: this.getType(),
             nombre : this.getName(),
             tiempo : this.getAge(),
             color : this.getColor(),
             peso : `${this.getWeight()} kg`,
-            altura : `${this.getHeight()} cm`
+            altura : `${this.getHeight()} cm`,
+            capitan: this.getCaptain()
         }
         console.table(data);
     }
